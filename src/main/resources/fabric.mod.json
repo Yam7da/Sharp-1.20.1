@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "sharpmod",
+	"version": "${version}",
+	"name": "Sharp Mod",
+	"description": "It will be sharp, don't cut your hands",
+	"authors": [
+		"Yam7da"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/sharpmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.yam7da.sharpmod.SharpMod"
+		],
+		"client": [
+			"net.yam7da.sharpmod.SharpModClient"
+		],
+		"fabric-datagen": [
+			"net.yam7da.sharpmod.SharpModDataGenerator"
+		]
+	},
+	"mixins": [
+		"sharpmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.1",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
